@@ -1,0 +1,27 @@
+GET http://localhost:3001/tareas/mensajes
+###
+
+POST http://localhost:3001/tareas
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nombre": "Parcial 4",
+  "puntos": 25,
+  "materia": "Matematicas",
+  "fechaEntrega": "2022-04-20"
+}
+
+###
+
+PUT http://localhost:3001/tareas/623e72c5ac5b717bda6884a8
+Content-Type: application/json
+
+{
+  "nombre": "Parcial 1"
+}
+
+###
+
+DELETE http://localhost:3001/tareas/4
+Content-Type: application/json
