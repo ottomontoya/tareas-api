@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 
 // crear server
 const app = express()
-const port = 3001
+const port = process.env.port || 3001
 
 // conexion a la db
 mongoose.connect(process.env.DATABASE_URL_CLOUD, {useNewUrlParser: true})
